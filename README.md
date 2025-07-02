@@ -1,12 +1,61 @@
-# React + Vite
+# 🛍️ Myntra Clone (React + Redux)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend clone of Myntra built using **React**, **Redux**, and **React Router**, simulating a shopping platform with item listing, add-to-bag functionality, and a bag summary view. Product data is fetched from a local JSON backend (mimicking real API behavior).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## Expanding the ESLint configuration
+[👉 Try the App Here](https://myntr-a.netlify.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+## 🔗 Backend API Integration
+
+The React frontend fetches product data from a **live backend** hosted on [Render](https://render.com).
+
+### 🔧 Backend API Endpoint
+fetch("[https://items-myntra-backend.onrender.com/items](https://items-myntra-backend.onrender.com/items)")
+
+### 🛒 Product Listing Page
+- Shows items with ratings, prices, discounts, and "Add to Bag"/"Remove" functionality.
+
+### 📦 Bag Page
+- Shows all items added to the bag
+- Displays total amount, discount, convenience fee
+- Allows placing an order or removing items
+
+---
+
+## 🧰 Tech Stack
+
+- **React** – component-based UI
+- **React Router DOM** – page routing
+- **Redux Toolkit** – global state management
+- **Hooks** – `useState`, `useEffect`, `useSelector`, `useDispatch`
+- **Local JSON Backend** – mimicking an API fetch
+- **Custom Styling**
+
+---
+
+## 🔑 Features
+
+- 🔄 Fetches product data from local JSON (like real API)
+- 🛍️ Add or remove items from the shopping bag
+- 🛒 Bag view updates dynamically with total calculation
+- 🔁 State managed via Redux
+- 🧠 Built using React best practices and clean component structure
+
+---
+
+## 🧠 Concepts Used
+
+- `useEffect` for data fetching
+- `useState` for local component states
+- `useSelector` / `useDispatch` for Redux state
+- Conditional rendering for loading/spinner logic
+- `createSlice()` from Redux Toolkit
+- Routing via `<Outlet>` and `react-router-dom`
+
+---
+
